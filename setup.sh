@@ -12,3 +12,4 @@ pip install sklearn==0.0
 pip install tokenizers
 pip install transformers
 pip install torch-optimizer
+pip3 install emoji==0.6.0
