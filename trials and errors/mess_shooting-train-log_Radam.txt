@@ -1,0 +1,24 @@
+args: {'train': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-train.csv', 'dev': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv', 'test': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test.csv', 'seed': 1000, 'epochs': 10, 'option': 'pretrain', 'use_gpu': True, 'dev_out': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev-out.txt', 'test_out': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test-out.txt', 'filepath': '/content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.3, 'lr': 1e-05}
+load 2000 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-train.csv
+load 500 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 0: train loss :: -0.046, train acc :: 0.305, dev acc :: 0.330
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 1: train loss :: -0.173, train acc :: 0.453, dev acc :: 0.472
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 2: train loss :: -0.335, train acc :: 0.627, dev acc :: 0.642
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 3: train loss :: -0.541, train acc :: 0.740, dev acc :: 0.756
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 4: train loss :: -0.768, train acc :: 0.779, dev acc :: 0.790
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 5: train loss :: -1.019, train acc :: 0.782, dev acc :: 0.796
+epoch 6: train loss :: -1.297, train acc :: 0.782, dev acc :: 0.796
+epoch 7: train loss :: -1.585, train acc :: 0.782, dev acc :: 0.796
+epoch 8: train loss :: -1.895, train acc :: 0.782, dev acc :: 0.796
+epoch 9: train loss :: -2.204, train acc :: 0.782, dev acc :: 0.796
+load model from /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+load 500 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv
+load 1500 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test.csv
+dev acc :: 0.796
+test acc :: 0.823

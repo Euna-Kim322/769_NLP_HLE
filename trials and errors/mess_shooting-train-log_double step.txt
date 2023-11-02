@@ -1,0 +1,19 @@
+args: {'train': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-train.csv', 'dev': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv', 'test': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test.csv', 'seed': 1234, 'epochs': 10, 'option': 'pretrain', 'use_gpu': True, 'dev_out': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev-out.txt', 'test_out': '/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test-out.txt', 'filepath': '/content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.3, 'lr': 1e-05}
+load 2000 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-train.csv
+load 500 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv
+save the model to /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+epoch 0: train loss :: -0.506, train acc :: 0.780, dev acc :: 0.796
+epoch 1: train loss :: -1.235, train acc :: 0.782, dev acc :: 0.796
+epoch 2: train loss :: -1.950, train acc :: 0.782, dev acc :: 0.796
+epoch 3: train loss :: -2.685, train acc :: 0.782, dev acc :: 0.796
+epoch 4: train loss :: -3.393, train acc :: 0.782, dev acc :: 0.796
+epoch 5: train loss :: -4.123, train acc :: 0.782, dev acc :: 0.796
+epoch 6: train loss :: -4.826, train acc :: 0.782, dev acc :: 0.796
+epoch 7: train loss :: -5.548, train acc :: 0.782, dev acc :: 0.796
+epoch 8: train loss :: -6.289, train acc :: 0.782, dev acc :: 0.796
+epoch 9: train loss :: -7.016, train acc :: 0.782, dev acc :: 0.796
+load model from /content/drive/MyDrive/ColabNotebooks/hw3/data/-model.pt
+load 500 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv
+load 1500 data from /content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test.csv
+dev acc :: 0.796
+test acc :: 0.824
