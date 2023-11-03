@@ -320,17 +320,17 @@ def test(args):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train", type=str, default="/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-train.csv")
-    parser.add_argument("--dev", type=str, default="/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev.csv")
-    parser.add_argument("--test", type=str, default="/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test.csv")
+    parser.add_argument("--train", type=str, default="data/mass_shooting-train.csv")
+    parser.add_argument("--dev", type=str, default="data/mass_shooting-dev.csv")
+    parser.add_argument("--test", type=str, default="data/mass_shooting-test.csv")
     parser.add_argument("--seed", type=int, default=11711)
     parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--option", type=str,
                         help='pretrain: the BERT parameters are frozen; finetune: BERT parameters are updated',
                         choices=('pretrain', 'finetune'), default="pretrain")
     parser.add_argument("--use_gpu", action='store_true')
-    parser.add_argument("--dev_out", type=str, default="/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-dev-output.csv")
-    parser.add_argument("--test_out", type=str, default="/content/drive/MyDrive/ColabNotebooks/hw3/data/mass_shooting-test-output.csv")
+    parser.add_argument("--dev_out", type=str, default="data/mass_shooting-dev-output.csv")
+    parser.add_argument("--test_out", type=str, default="data/mass_shooting-test-output.csv")
     parser.add_argument("--filepath", type=str, default=None)
 
     # hyper parameters
